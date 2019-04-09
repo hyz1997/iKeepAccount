@@ -8,6 +8,7 @@ exports.doLogin = (req,res)=>{
       let code = fields.code;
       let name = fields.name;
       let avatar = fields.avatarUrl;
+      console.log(fields)
       db.insertOne("users",{
         "userName":name,
         "avatar":avatar,
