@@ -12,6 +12,9 @@ app.post("/insertItem",router.insertItem);
 //按时间查找账单
 //app.get('/findByTime',router.findByTime)
 //查找数据
+app.get("/test",(req,res)=>{
+  res.send('哈哈哈')
+})
 app.get("/find",(req,res)=>{
   db.find('teacher',{},(err,result)=>{
     res.send(result)
